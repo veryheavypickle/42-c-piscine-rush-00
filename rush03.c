@@ -6,11 +6,10 @@
 /*   By: mduque-v <mduque-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 18:01:46 by mduque-v          #+#    #+#             */
-/*   Updated: 2022/02/12 18:23:50 by mduque-v         ###   ########.fr       */
+/*   Updated: 2022/02/12 18:25:56 by mduque-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <stdio.h>
 
 void ft_putchar(char c);
