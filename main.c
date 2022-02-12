@@ -6,7 +6,7 @@
 /*   By: mduque-v <mduque-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 14:32:38 by mduque-v          #+#    #+#             */
-/*   Updated: 2022/02/12 17:37:18 by mduque-v         ###   ########.fr       */
+/*   Updated: 2022/02/12 18:00:04 by mduque-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ void rush (int y, int x);
 
 int main (void) {
     
-    rush(5,5);
+    rush(4,4);
     
     return (0); 
 }
