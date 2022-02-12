@@ -6,15 +6,14 @@
 /*   By: mduque-v <mduque-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 14:32:38 by mduque-v          #+#    #+#             */
-/*   Updated: 2022/02/12 18:00:04 by mduque-v         ###   ########.fr       */
+/*   Updated: 2022/02/12 18:19:14 by mduque-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void rush (int y, int x);
 
-int main (void) {
-    
+int     main (void) 
+{
     rush(4,4);
-    
     return (0); 
 }
