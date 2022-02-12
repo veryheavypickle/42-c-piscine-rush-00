@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void    rush(int y, int x);
+void	rush(int y, int x);
 
-int     main(void)
+int	main(void)
 {
-    rush(4, 4);
-    return (0);
+	rush(4, 4);
+	return (0);
 }
