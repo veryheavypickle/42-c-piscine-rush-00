@@ -17,43 +17,58 @@ int rush (int x, int y);
 
 int main (void) {
 
-    rush(5,5); 
-
+    
+    /*
+    write(0, "H", 1);
+    write(0, "O", 1);
+    write(1, "This will be output to standard out\n", 36);
+    */
+    rush(5,5);
+    
     return (0); 
 }
 
 int rush (int x, int y){
 
-    int i = 1; 
-    int j = 1; 
+    int i = 0; 
+    int j = 0; 
     int rows = x; 
     int colummns = y; 
 
     char a;
+    char empty;
     a = 'A';
+    empty = ' ';
 
-    while (i < rows){
-        while (j < colummns) {
-            /*
+    while (i < colummns){
+        i++;
+        j = 0;
+        while (j < rows) {
+            j++;
             if (j == 1  && i == 1) {
-                printf("A");
-                write(0, &a, 1);
-            } else if (j == 1 && i == y) {
-                printf("B");
-                write(0, &a, 1);
-            } else if (j == x && i == 1) {
-                printf("C");
-                write(0, &a, 1);
-            } else if (j == x && i == y) {
-                printf("D");
                 write(0, &a, 1);
             }
+
+            else if (j == 1 && i == y) {
+                write(0, &a, 1);
+            }
+
+            else if (j == x && i == 1) {
+                write(0, &a, 1);
+            }
+            else if (j == x && i == y) {
+                write(0, &a, 1);
+            } else {
+                write(0, &empty, 1);
+            }
+            /*
+            printf("j: %d\ni: %d\n", j, i);
+            printf("x: %d\ny: %d\n\n", x, y);
             */
-            j++;
         }
-        printf("j: %d\ni: %d\n", j, i);
-        printf("x: %d\ny: %d\n\n", x, y);
-        i++;
+        /* Write new line */
+        write(0, "\n", 1);
+        
     }
 
 
