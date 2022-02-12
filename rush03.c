@@ -3,46 +3,40 @@
 
 void ft_putchar(char c);
 
-void    rush (int x, int y){
+void    rush (int y, int x){
 
     int i = 0;
     int j = 0;
-    int rows = x;
-    int colummns = y;
+    int rows = x - 1;
+    int colummns = y - 1;
 
-    char a;
-    char empty;
-    a = 'A';
-    empty = ' ';
-
-    while (i < colummns){
-        i++;
-        j = 0;
-        while (j < rows) {
-            j++;
-            if (j == 1  && i == 1) {
-                write(0, &a, 1);
+    while (i <= colummns){
+        while (j <= rows) {
+            if (j == 0  && i == 0) {
+                ft_putchar('1');
+            }
+            else if (j == 0 && i == colummns) {
+                ft_putchar('2');
             }
 
-            else if (j == 1 && i == y) {
-                write(0, &a, 1);
+            else if (j == rows && i == 0) {
+                ft_putchar('3');
             }
-
-            else if (j == x && i == 1) {
-                write(0, &a, 1);
-            }
-            else if (j == x && i == y) {
-                write(0, &a, 1);
+            else if (j == rows && i == colummns) {
+                ft_putchar('4');
             } else {
-                write(0, &empty, 1);
+                ft_putchar(' ');
             }
             /*
             printf("j: %d\ni: %d\n", j, i);
             printf("x: %d\ny: %d\n\n", x, y);
             */
+            j++;
         }
+        j = 0;
+        i++;
         /* Write new line */
-        write(0, "\n", 1);
+        ft_putchar('\n');
         
     }
 }

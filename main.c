@@ -6,20 +6,14 @@
 /*   By: mduque-v <mduque-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 14:32:38 by mduque-v          #+#    #+#             */
-/*   Updated: 2022/02/12 15:18:21 by mduque-v         ###   ########.fr       */
+/*   Updated: 2022/02/12 17:37:18 by mduque-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void rush (int x, int y);
+void rush (int y, int x);
 
 int main (void) {
-
     
-    /*
-    write(0, "H", 1);
-    write(0, "O", 1);
-    write(1, "This will be output to standard out\n", 36);
-    */
     rush(5,5);
     
     return (0); 
