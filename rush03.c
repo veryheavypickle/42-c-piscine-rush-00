@@ -22,9 +22,9 @@ void	rush(int y, int x)
 	{
 		while (j <= y - 1)
 		{
-			if ((j == 0 && i == 0) || (j == 0 && i == x - 1))
+			if (j == 0 && (i == 0 || i == x - 1))
 				ft_putchar('A');
-			else if ((j == y - 1 && i == 0) || (j == y - 1 && i == x - 1))
+			else if (j == y - 1 && (i == 0 || i == x - 1))
 				ft_putchar('C');
 			else if (i == 0 || j == 0 || i == x - 1 || j == y - 1)
 				ft_putchar('B');
