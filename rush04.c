@@ -23,11 +23,11 @@ void	rush(int x, int y)
 		while (j <= x - 1)
 		{
 			if ((i == 0 && j == 0) || (i == y - 1 && j == x - 1 && x != 1 && y != 1))
-				ft_putchar('/');
+				ft_putchar('A');
 			else if ((i == y - 1 && j == 0) || (i == 0 && j == x - 1))
-				ft_putchar('\\');
+				ft_putchar('C');
 			else if (i == 0 || j == 0 || i == y - 1 || j == x - 1)
-				ft_putchar('*');
+				ft_putchar('B');
 			else
 				ft_putchar(' ');
 			j++;

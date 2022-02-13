@@ -13,20 +13,20 @@
 
 void	ft_putchar(char c);
 
-void	rush(int y, int x)
+void	rush(int x, int y)
 {
 	int	i;
 	int	j;
 
-	while (i <= x - 1)
+	while (i <= y - 1)
 	{
-		while (j <= y - 1)
+		while (j <= x - 1)
 		{
-			if ((j == 0 && (i == 0 || i == x - 1)) || (j == y - 1 && (i == 0 || i == x - 1)))
+			if ((j == 0 && (i == 0 || i == y - 1)) || (j == x - 1 && (i == 0 || i == y - 1)))
 				ft_putchar('o');
-			else if ((i == 0) || (i == x - 1))
+			else if ((i == 0) || (i == y - 1))
 				ft_putchar('-');
-			else if (i == 0 || j == 0 || i == x - 1 || j == y - 1)
+			else if (i == 0 || j == 0 || i == y - 1 || j == x - 1)
 				ft_putchar('|');
 			else
 				ft_putchar(' ');
